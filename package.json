@@ -2,12 +2,20 @@
   "name": "DracoCI",
   "version": "1.0.0",
   "description": "Continuous integration for multiple environments.",
+  "keywords": [
+    "draco",
+    "Node.js",
+    "application",
+    "dracoci",
+    "dracojs"
+  ],
   "author": {
     "name": "Tiago Antunes de Souza",
     "email": "mail@tasouza.com"
   },
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 0.10.0",
+    "npm": ">= 1.0.0"
   },
   "repository" : {
     "type" : "git",
@@ -20,6 +28,9 @@
       "url": "https://github.com/tasouza/DracoCI/blob/master/LICENSE"
     }
   ],
+  "dependencies": {
+    "express": "~3.4.4"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.0",
@@ -29,7 +40,8 @@
   "scripts": {
     "start": "node start.js",
     "debug": "node debug start.js",
-    "test": "grunt qunit",
+    "test": "grunt qunit"
   },
+  "private": true,
   "main": "start.js"
 }
