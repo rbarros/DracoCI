@@ -27,9 +27,9 @@
     "grunt-qunit-istanbul": "~0.3.0"
   },
   "scripts": {
-    "start": "node app.js",
-    "debug": "node debug app.js",
+    "start": "node start.js",
+    "debug": "node debug start.js",
     "test": "grunt qunit",
   },
-  "main": "app.js"
+  "main": "start.js"
 }
